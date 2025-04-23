@@ -1,24 +1,10 @@
-# services:
-#   - type: web
-#     name: news-backend
-#     env: node
-#     buildCommand: npm install
-#     startCommand: node server/app.js
-#     plan: free
-
-
-
 services:
   - type: web
-    name: saral-trading-platform
+    name: backend-swis
     env: node
     plan: free
-    buildCommand: |
-      npm install
-      curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-      python3 get-pip.py
-      pip3 install -r requirement.txt
-    startCommand: node server/app.js
-    buildEnvVars:
-      PYTHON_VERSION: 3.10
-
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
