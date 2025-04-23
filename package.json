@@ -1,13 +1,16 @@
 {
     "name": "news-backend",
     "version": "1.0.0",
+    "description": "Node.js backend for finance news with sentiment analysis",
     "main": "server/app.js",
     "scripts": {
       "start": "node server/app.js"
     },
     "dependencies": {
-      "cors": "^2.8.5",
-      "express": "^4.18.2"
+      "axios": "^1.6.0",
+      "cheerio": "^1.0.0-rc.12",
+      "express": "^4.18.2",
+      "vader-sentiment": "^1.1.4"
     }
   }
   
