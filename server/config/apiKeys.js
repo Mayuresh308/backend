@@ -1,0 +1,6 @@
+module.exports = {
+  FINNHUB_API_KEY: process.env.FINNHUB_API_KEY,
+  COINGECKO_API_KEY: process.env.COINGECKO_API_KEY,
+  BINANCE_API_KEY: process.env.BINANCE_API_KEY,
+  ALPHAVANTAGE_API_KEY: process.env.ALPHAVANTAGE_API_KEY,
+};

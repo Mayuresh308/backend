@@ -46,8 +46,10 @@ async function getYahooFinanceNews() {
       });
     });
 
+    console.log(newsData); // Debugging: Log the fetched news data
     return newsData;
   } catch (error) {
+    console.error("Error fetching news:", error);
     return [{ error: error.message }];
   }
 }
