@@ -3,4 +3,5 @@ module.exports = {
   COINGECKO_API_KEY: process.env.COINGECKO_API_KEY,
   BINANCE_API_KEY: process.env.BINANCE_API_KEY,
   ALPHAVANTAGE_API_KEY: process.env.ALPHAVANTAGE_API_KEY,
+  TWELVE_DATA_API_KEY: process.env.TWELVE_DATA_API_KEY,
 };
